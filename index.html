@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="input-group">
+        <label id="email-label">Email</label>
+        <input
+          type="email"
+          spellcheck="false"
+          id="email-field"
+          onkeyup="validateEmail()"
+        />
+        <span id="email-error"></span>
+      </div>
+      <!-- password-check-1 -->
+      <div class="input-box">
+        <input type="password" placeholder="Password" id="password" />
+
+        <button type="submit">
+      <img src="eye-close.png" id="eyeicon" alt="" />
+
+          <!-- <img src="arrow.png" alt="submit-button" /> -->
+        </button>
+        <p id="message">Password is <span id="strength"> </span></p>
+      </div>
+      <!-- password-check-1 -->
+
+      <!-- popup -->
+     <div class="pop">
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+
+        <div class="popup" id="popup">
+            <img src="404-tick.png" alt="">
+            <h2>Thank You</h2>
+            <p>Your details has been successfully submitted.Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+        
+      </div>
+     </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
